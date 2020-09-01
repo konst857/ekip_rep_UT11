@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сезон</dataPath>
+				<field>Сезон</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сезон</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Описание</dataPath>
+				<field>Описание</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>АртикулОбщий</dataPath>
+				<field>АртикулОбщий</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Артикул общий</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Производитель</dataPath>
+				<field>Производитель</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подгруппа1</dataPath>
+				<field>Подгруппа1</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Подгруппа1</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Цвет</dataPath>
+				<field>Цвет</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Цвет</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦветПроизводителя</dataPath>
+				<field>ЦветПроизводителя</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Цвет производителя</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подгруппа2</dataPath>
+				<field>Подгруппа2</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Подгруппа2</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подгруппа3</dataPath>
+				<field>Подгруппа3</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Подгруппа3</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Код</dataPath>
+				<field>Код</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Помещение</dataPath>
+				<field>Помещение</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Характеристика</dataPath>
+				<field>Характеристика</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Размер</dataPath>
+				<field>Размер</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Размер</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Склад</dataPath>
+				<field>Склад</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Назначение</dataPath>
+				<field>Назначение</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+				<useRestriction>
+					<condition>true</condition>
+				</useRestriction>
+				<attributeUseRestriction>
+					<condition>true</condition>
+				</attributeUseRestriction>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Остаток</dataPath>
+				<field>Остаток</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Остаток</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Серия</dataPath>
+				<field>Серия</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Марка</dataPath>
+				<field>Марка</field>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>АртикулSKU</dataPath>
+				<field>АртикулSKU</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Артикул SKU</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Пол</dataPath>
+				<field>Пол</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Пол</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Возраст</dataPath>
+				<field>Возраст</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Возраст</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Модель</dataPath>
+				<field>Модель</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Модель</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Товар</dataPath>
+				<field>Товар</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Товар</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Штрихкод</dataPath>
+				<field>Штрихкод</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Штрихкод</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактеристикаНоменклатуры</dataPath>
+				<field>ХарактеристикаНоменклатуры</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Характеристика номенклатуры</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	МАКСИМУМ(ШтрихкодыНоменклатуры.Штрихкод) КАК Штрихкод,
+	ШтрихкодыНоменклатуры.Характеристика КАК Характеристика
+ПОМЕСТИТЬ ВртТаб_Штрикоды
+ИЗ
+	РегистрСведений.ШтрихкодыНоменклатуры КАК ШтрихкодыНоменклатуры
+{ГДЕ
+	(ВЫРАЗИТЬ(ШтрихкодыНоменклатуры.Характеристика.Владелец КАК Справочник.Номенклатура)).* КАК Товар}
+
+СГРУППИРОВАТЬ ПО
+	ШтрихкодыНоменклатуры.Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ШтрихкодыНоменклатуры.Штрихкод) КАК Штрихкод,
+	ШтрихкодыНоменклатуры.Номенклатура КАК Ссылканоменклатура
+ПОМЕСТИТЬ ВртТаб_ШтрикодыНоменклатура
+ИЗ
+	РегистрСведений.ШтрихкодыНоменклатуры КАК ШтрихкодыНоменклатуры
+{ГДЕ
+	ШтрихкодыНоменклатуры.Номенклатура.* КАК Товар}
+
+СГРУППИРОВАТЬ ПО
+	ШтрихкодыНоменклатуры.Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураДополнительныеРеквизиты.Ссылка КАК Товар,
+	НоменклатураДополнительныеРеквизиты.Значение КАК Пол
+ПОМЕСТИТЬ ВрТаб_Пол
+ИЗ
+	Справочник.Номенклатура.ДополнительныеРеквизиты КАК НоменклатураДополнительныеРеквизиты
+ГДЕ
+	НоменклатураДополнительныеРеквизиты.Свойство = &amp;СвойствоПол
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураДополнительныеРеквизиты.Ссылка КАК Товар,
+	НоменклатураДополнительныеРеквизиты.Значение КАК Возраст
+ПОМЕСТИТЬ ВрТаб_Возраст
+ИЗ
+	Справочник.Номенклатура.ДополнительныеРеквизиты КАК НоменклатураДополнительныеРеквизиты
+ГДЕ
+	НоменклатураДополнительныеРеквизиты.Свойство = &amp;СвойствоВозраст
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураДополнительныеРеквизиты.Ссылка КАК Товар,
+	НоменклатураДополнительныеРеквизиты.Значение КАК Модель
+ПОМЕСТИТЬ ВрТаб_Модели
+ИЗ
+	Справочник.Номенклатура.ДополнительныеРеквизиты КАК НоменклатураДополнительныеРеквизиты
+ГДЕ
+	НоменклатураДополнительныеРеквизиты.Свойство = &amp;СвойствоМодель
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДополнительныеСведения.Ссылка КАК Характеристика,
+	ДополнительныеСведения.Значение КАК АртикулSKU
+ПОМЕСТИТЬ ВрТаб_АртикулыSKU
+ИЗ
+	Справочник.ХарактеристикиНоменклатуры.ДополнительныеРеквизиты КАК ДополнительныеСведения
+ГДЕ
+	ДополнительныеСведения.Свойство = &amp;АртикулSKU
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДополнительныеСведения.Ссылка КАК Характеристика,
+	ДополнительныеСведения.Значение КАК Размер
+ПОМЕСТИТЬ ВрТаб_Размеры
+ИЗ
+	Справочник.ХарактеристикиНоменклатуры.ДополнительныеРеквизиты КАК ДополнительныеСведения
+ГДЕ
+	ДополнительныеСведения.Свойство = &amp;СвойствоРазмер
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДополнительныеСведения.Ссылка КАК Характеристика,
+	ДополнительныеСведения.Значение КАК Цвет
+ПОМЕСТИТЬ ВрТаб_Цвета
+ИЗ
+	Справочник.ХарактеристикиНоменклатуры.ДополнительныеРеквизиты КАК ДополнительныеСведения
+ГДЕ
+	ДополнительныеСведения.Свойство = &amp;СвойствоЦвет
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НоменклатураДополнительныеРеквизиты.Ссылка КАК Характеристика,
+	НоменклатураДополнительныеРеквизиты.Значение КАК ЦветПроизводителя
+ПОМЕСТИТЬ ВрТаб_ЦветаПроизводителя
+ИЗ
+	Справочник.Номенклатура.ДополнительныеРеквизиты КАК НоменклатураДополнительныеРеквизиты
+ГДЕ
+	НоменклатураДополнительныеРеквизиты.Свойство = &amp;СвойствоЦветпроизводителя
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СпрНоменклатура.Код КАК Код,
+	СпрНоменклатура.Артикул КАК АртикулОбщий,
+	ЕСТЬNULL(ВрТаб_АртикулыSKU.АртикулSKU, "") КАК АртикулSKU,
+	ЗНАЧЕНИЕ(Справочник.номенклатура.ПустаяСсылка) КАК Подгруппа1,
+	СпрНоменклатура.ВидНоменклатуры КАК Подгруппа2,
+	ВЫБОР
+		КОГДА ИспользоватьТоварныеКатегории.Значение
+			ТОГДА СпрНоменклатура.ТоварнаяКатегория
+		ИНАЧЕ СпрНоменклатура.ЦеноваяГруппа
+	КОНЕЦ КАК Подгруппа3,
+	СпрНоменклатура.Марка КАК Марка,
+	ЕСТЬNULL(ВрТаб_ЦветаПроизводителя.ЦветПроизводителя, "") КАК ЦветПроизводителя,
+	ЕСТЬNULL(ВрТаб_Размеры.Размер, "") КАК Размер,
+	ЕСТЬNULL(ВрТаб_Цвета.Цвет, "") КАК Цвет,
+	СпрНоменклатура.КоллекцияНоменклатуры КАК Сезон,
+	СпрНоменклатура.Описание КАК Описание,
+	СпрНоменклатура.Производитель КАК Производитель,
+	ЕСТЬNULL(ТоварыНаСкладахОстатки.ВНаличииОстаток, 0) КАК Остаток,
+	ЕСТЬNULL(ВрТаб_Возраст.Возраст, "") КАК Возраст,
+	ЕСТЬNULL(ВрТаб_Пол.Пол, "") КАК Пол,
+	ЕСТЬNULL(ВрТаб_Модели.Модель, "") КАК Модель,
+	ХарактеристикиНоменклатуры.Ссылка КАК ХарактеристикаНоменклатуры,
+	СпрНоменклатура.Ссылка КАК Товар,
+	ЕСТЬNULL(ВртТаб_Штрикоды.Штрихкод, ВртТаб_ШтрикодыНоменклатура.Штрихкод) КАК Штрихкод
+ИЗ
+	Константа.ИспользоватьТоварныеКатегории КАК ИспользоватьТоварныеКатегории,
+	Справочник.Номенклатура КАК СпрНоменклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ХарактеристикиНоменклатуры КАК ХарактеристикиНоменклатуры
+			ЛЕВОЕ СОЕДИНЕНИЕ ВрТаб_АртикулыSKU КАК ВрТаб_АртикулыSKU
+			ПО ХарактеристикиНоменклатуры.Ссылка = ВрТаб_АртикулыSKU.Характеристика
+			ЛЕВОЕ СОЕДИНЕНИЕ ВрТаб_Размеры КАК ВрТаб_Размеры
+			ПО ХарактеристикиНоменклатуры.Ссылка = ВрТаб_Размеры.Характеристика
+			ЛЕВОЕ СОЕДИНЕНИЕ ВрТаб_Цвета КАК ВрТаб_Цвета
+			ПО ХарактеристикиНоменклатуры.Ссылка = ВрТаб_Цвета.Характеристика
+			ЛЕВОЕ СОЕДИНЕНИЕ ВртТаб_Штрикоды КАК ВртТаб_Штрикоды
+			ПО ХарактеристикиНоменклатуры.Ссылка = ВртТаб_Штрикоды.Характеристика
+		ПО СпрНоменклатура.Ссылка = ХарактеристикиНоменклатуры.Владелец
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ТоварыНаСкладах.Остатки КАК ТоварыНаСкладахОстатки
+		ПО (ТоварыНаСкладахОстатки.Номенклатура = СпрНоменклатура.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ ВрТаб_Модели КАК ВрТаб_Модели
+		ПО (ВрТаб_Модели.Товар = СпрНоменклатура.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ ВрТаб_Пол КАК ВрТаб_Пол
+		ПО (ВрТаб_Пол.Товар = СпрНоменклатура.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ ВрТаб_Возраст КАК ВрТаб_Возраст
+		ПО (ВрТаб_Возраст.Товар = СпрНоменклатура.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ ВрТаб_ЦветаПроизводителя КАК ВрТаб_ЦветаПроизводителя
+		ПО СпрНоменклатура.Ссылка = ВрТаб_ЦветаПроизводителя.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ ВртТаб_ШтрикодыНоменклатура КАК ВртТаб_ШтрикодыНоменклатура
+		ПО СпрНоменклатура.Ссылка = ВртТаб_ШтрикодыНоменклатура.Ссылканоменклатура
+ГДЕ
+	СпрНоменклатура.ЭтоГруппа = ЛОЖЬ
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.Номенклатура)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			ОбщиеДополнительныеСведения.Ссылка КАК Ссылка,
+			ОбщиеДополнительныеСведения.Наименование КАК Наименование,
+			ОбщиеДополнительныеСведения.ТипЗначения КАК ТипЗначения
+		ИЗ
+			ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения КАК ОбщиеДополнительныеСведения
+		ГДЕ
+			ОбщиеДополнительныеСведения.НаборСвойств.Родитель = ЗНАЧЕНИЕ(Справочник.НаборыДополнительныхРеквизитовИСведений.Справочник_Номенклатура))
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ПОЛЕТИПАЗНАЧЕНИЯ ТипЗначения
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК (ВЫБРАТЬ
+			НоменклатураДополнительныеРеквизиты.Ссылка КАК Ссылка,
+			НоменклатураДополнительныеРеквизиты.Свойство КАК Свойство,
+			НоменклатураДополнительныеРеквизиты.Значение КАК Значение
+		ИЗ
+			Справочник.Номенклатура.ДополнительныеРеквизиты КАК НоменклатураДополнительныеРеквизиты)
+	ПОЛЕОБЪЕКТА Ссылка
+	ПОЛЕВИДА Свойство
+	ПОЛЕЗНАЧЕНИЯ Значение }</query>
+		</dataSet>
+		<totalField>
+			<dataPath>Остаток</dataPath>
+			<expression>Сумма(Остаток)</expression>
+		</totalField>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>АртикулSKU</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Артикул SKU</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>СвойствоРазмер</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Свойство размер</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>СвойствоЦвет</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Свойство цвет</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>СвойствоЦветпроизводителя</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Свойство цветпроизводителя</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>СвойствоВозраст</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Свойство возраст</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>СвойствоМодель</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Свойство модель</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>СвойствоПол</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Свойство пол</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Код</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АртикулОбщий</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АртикулSKU</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Подгруппа2</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Возраст</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Подгруппа3</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Пол</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Производитель</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Модель</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Цвет</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЦветПроизводителя</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Размер</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Сезон</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Описание</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Товар</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ХарактеристикаНоменклатуры</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Штрихкод</field>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>d2ddf600-d9a8-4788-b311-e99dea59cda9</userSettingID>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Товар</left>
+			<comparisonType>Equal</comparisonType>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Остаток</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:decimal">0</right>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>fe02a246-219f-450e-886b-c5c724267266</userSettingID>
+	</filter>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
