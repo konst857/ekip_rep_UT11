@@ -453,7 +453,7 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</Type>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
@@ -467,7 +467,7 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</Type>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
@@ -481,7 +481,7 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</Type>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
@@ -495,7 +495,7 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</Type>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
@@ -509,7 +509,7 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</Type>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
@@ -523,7 +523,7 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</Type>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
@@ -537,7 +537,7 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<TypeId xmlns="http://v8.1c.ru/8.1/data/core">824d87c6-28dc-46eb-93d6-fbbcb5c9ab24</TypeId>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</Type>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
