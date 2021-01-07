@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БонуснаяПрограммаЛояльности</dataPath>
+				<field>БонуснаяПрограммаЛояльности</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МоментВремени</dataPath>
+				<field>МоментВремени</field>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>МинимальнаяШирина</parameter>
+						<value xsi:type="xs:decimal">100</value>
+					</item>
+				</appearance>
+				<inputParameters>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
+						<use>false</use>
+						<parameter>ФорматРедактирования</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧН=0</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</inputParameters>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Остаток</dataPath>
+				<field>Остаток</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Партнер</dataPath>
+				<field>Партнер</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КСписанию</dataPath>
+				<field>КСписанию</field>
+				<appearance/>
+				<inputParameters>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
+						<parameter>ФорматРедактирования</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/core" xsi:type="d7p1:LocalStringType">
+							<d7p1:item>
+								<d7p1:lang>ru</d7p1:lang>
+								<d7p1:content>ЧН=Ноль</d7p1:content>
+							</d7p1:item>
+						</value>
+					</item>
+				</inputParameters>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	БонусныеБаллыОстатки.БонуснаяПрограммаЛояльности КАК БонуснаяПрограммаЛояльности,
+	БонусныеБаллыОстатки.Партнер КАК Партнер,
+	ВЫБОР
+		КОГДА БонусныеБаллыОстатки.НачисленоОстаток - ВЫБОР
+				КОГДА БонусныеБаллыОстатки.КСписаниюОстаток &gt; 0
+					ТОГДА БонусныеБаллыОстатки.КСписаниюОстаток
+				ИНАЧЕ 0
+			КОНЕЦ &gt;= 0
+			ТОГДА БонусныеБаллыОстатки.НачисленоОстаток - ВЫБОР
+					КОГДА БонусныеБаллыОстатки.КСписаниюОстаток &gt; 0
+						ТОГДА БонусныеБаллыОстатки.КСписаниюОстаток
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ 0
+	КОНЕЦ КАК Остаток,
+	БонусныеБаллы.КСписанию КАК КСписанию,
+	БонусныеБаллы.МоментВремени КАК МоментВремени
+ИЗ
+	РегистрНакопления.БонусныеБаллы.Остатки(НАЧАЛОПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ), ) КАК БонусныеБаллыОстатки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрНакопления.БонусныеБаллы КАК БонусныеБаллы
+		ПО БонусныеБаллыОстатки.Партнер = БонусныеБаллы.Партнер
+ГДЕ
+	ВЫБОР
+			КОГДА БонусныеБаллыОстатки.НачисленоОстаток - ВЫБОР
+					КОГДА БонусныеБаллыОстатки.КСписаниюОстаток &gt; 0
+						ТОГДА БонусныеБаллыОстатки.КСписаниюОстаток
+					ИНАЧЕ 0
+				КОНЕЦ &gt;= 0
+				ТОГДА БонусныеБаллыОстатки.НачисленоОстаток - ВЫБОР
+						КОГДА БонусныеБаллыОстатки.КСписаниюОстаток &gt; 0
+							ТОГДА БонусныеБаллыОстатки.КСписаниюОстаток
+						ИНАЧЕ 0
+					КОНЕЦ
+			ИНАЧЕ 0
+		КОНЕЦ &lt;&gt; 0
+
+УПОРЯДОЧИТЬ ПО
+	Партнер,
+	МоментВремени</query>
+		</dataSet>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+			<inputParameters/>
+			<use>Always</use>
+		</parameter>
+		<parameter>
+			<name>ТекущаяДата</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Текущая дата</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<inputParameters/>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">СписаниеБонусныхБаллов</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Списание бонусных баллов</d4p1:content>
+				</d4p1:item>
+			</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Партнер</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Остаток</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КСписанию</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>МоментВремени</field>
+		</item>
+	</selection>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Период</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+	</dataParameters>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
