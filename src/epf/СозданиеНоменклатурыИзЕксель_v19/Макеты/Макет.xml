@@ -619,8 +619,6 @@
 		<viewMode>Normal</viewMode>
 		<userSettingID>fe02a246-219f-450e-886b-c5c724267266</userSettingID>
 	</filter>
-	<dataParameters/>
-	<outputParameters/>
 	<item xsi:type="StructureItemGroup">
 		<order>
 			<item xsi:type="OrderItemAuto"/>
@@ -628,7 +626,6 @@
 		<selection>
 			<item xsi:type="SelectedItemAuto"/>
 		</selection>
-		<outputParameters/>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
